@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document</title>
+        <style>
+        h1{
+            color: aqua;
+        }
+       /* color by position of classes */
+        /* the specificity od this selector is 10 */
+        .purple{
+            color: blueviolet;
+        }
+        /* the specificity od this selector is 10 */
+        .yellow{
+          
+            color: rgb(218, 231, 33)!important;   /*wherever i used "!important" then it will be applied at all cost*/
+        }
+
+        /* the specificity od this selector is 10 */
+
+        .red{
+            color: rgb(226, 18, 25);
+        }
+
+        /* example of attribute selector */
+        /* [data-x=a]{
+            background-color: aquamarine;
+        } */  
+
+        /* the specificity od this selector is 1+10=11 */
+         h1.yellow{
+            color: yellow;
+         }      
+
+    </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="yellow red purple" data-x="a">CSS spcificity</h1>
+        </div>
+
+    </body>
+</html>
+
+<!-- values of specificity:
+higher the specificity higher the probability of getting that color
+universal selector-0
+element selectors and pseudo elemenets-1
+class selectors,attributes selectors and pseudo classes-10
+id selectors-100
+inline styles-1000  -->
