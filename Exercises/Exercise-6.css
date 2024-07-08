@@ -1,0 +1,129 @@
+*{
+    background-color: white;
+}
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    margin-top: 20px;
+}
+
+ul li {
+    font-family: sans-serif;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 64px auto;
+}
+
+.first span {
+    font-weight: 500;
+    font-size: 46px;
+}
+
+.first img {
+    padding-left: 10px;
+}
+
+.windows {
+    margin-bottom: -3px;
+}
+
+.try {
+    font-size: 23px;
+    text-align: center;
+    width: 55vw;
+    margin-top: 48px;
+}
+
+.button {
+    background-color: #00b6d1;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 16vw;
+    max-height: 16vh;
+    border: none;
+   
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+}
+
+.second span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 29px;
+    font-weight: 500;
+}
+
+.second div.small {
+    margin-bottom: -6px;
+}
+.third{
+width:60vw;
+display:grid;
+grid-template-columns:1fr 1fr 1fr ;
+gap:12px;
+margin:auto;
+margin-top: 40px;
+
+
+}
+.item{
+    border: 2px solid black; 
+    height:20vh;  
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border:none;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+.green{
+    background-color: #15de33;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 16vw;
+    max-height: 16vh;
+    border: none;
+    margin-bottom: 0; 
+ 
+}
+.lang1,.lang,.item-lang{
+    background-color: #f9f9f9;
+    font-weight: 100;  
+}
+.lang1{
+   padding-bottom: 40px;
+}
+.lang{
+    margin-bottom: 31px;
+}
+@media screen and (max-width:425px){
+    .third{
+        grid-template-columns: 1fr;
+    }
+}
